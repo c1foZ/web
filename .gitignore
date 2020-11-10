@@ -1,0 +1,4 @@
+.templates
+.vscode
+backend/node_modules
+.prettierrc
