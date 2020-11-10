@@ -20,6 +20,7 @@ vendor
 # Temporaries
 .tmp
 .temp
+.templates
 
 # Built
 dist
@@ -27,3 +28,6 @@ target
 built
 output
 out
+
+.vscode
+node_modules
