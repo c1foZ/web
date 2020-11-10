@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Formulár</title>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="myscript.js"></script>
+	</head>
+	<body>
+		<form id="form">
+			<legend><h2>Registrácia</h2></legend>
+			<div>
+				<label for="name">Meno: </label>
+				<input type="text" id="name" placeholder="Zadaj meno..." />
+			</div>
+			<div>
+				<label for="password">Heslo: </label>
+				<input type="password" id="password" placeholder="Zadaj heslo..." />
+			</div>
+			<div>
+				<label for="gender">Pohlavie: </label>
+				<input type="radio" name="gender" id="gender" />Muž
+				<input type="radio" name="gender" id="gender" />Žena
+			</div>
+			<div>
+				<label for="education">Vzdelanie: </label>
+				<select name="education" id="education" >
+					<option value=""></option>
+					<option value="">Základné</option>
+					<option value="">Stredoškolské</option>
+					<option value="">Vysokoškolské</option>
+				</select>
+			</div>
+			<div>
+				<label for="skills">Viem programovať v: </label>
+				<input type="checkbox" id="skills" />C
+				<input type="checkbox" id="skills" />C++
+				<input type="checkbox" id="skills" />Python
+				<input type="checkbox" id="skills" />Javascript
+			</div>
+			<div>
+				<label for="attachment">Príloha</label>
+				<input type="file" id="attachment" />
+			</div>
+			<button type="button" onclick="getInputValue();">Odoslať</button>
+			<div>
+                <label for="results">Výsledok:</br></label>
+                <h3 id="name1"></h3>
+                <h3 id="pass"></h3>
+			</div>
+		</form>
+	</body>
+</html>

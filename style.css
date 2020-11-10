@@ -1,0 +1,77 @@
+body {
+	background-color: black;
+}
+
+form {
+	background-color: white;
+	color: black;
+	padding: 10px;
+	margin: 100px;
+	border-radius: 30px;
+	transition-duration: 0.5s;
+	width: 400px;
+}
+form:hover {
+	background-color: black;
+	color: white;
+}
+table {
+	color: black;
+}
+table:hover {
+	color: white;
+}
+
+.button {
+	display: inline-block;
+	border-radius: 50px;
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	color: #000000;
+	text-align: center;
+	font-size: 18px;
+	padding: 20px;
+	width: 300px;
+	transition: all 1s;
+	cursor: pointer;
+	margin-left: 25%;
+	margin-top: 15%;
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+div {
+	margin: 10px;
+}
+
+button {
+	margin: 10px;
+}
