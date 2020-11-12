@@ -2,6 +2,7 @@
 	<head>
 		<title>Formulár</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/backend/server.js" />
 		<script defer src="myscript.js"></script>
 	</head>
 	<body>
@@ -13,7 +14,11 @@
 			</div>
 			<div>
 				<label for="password">Heslo: </label>
-				<input type="password" id="password" placeholder="Zadaj heslo..." />
+				<input
+					type="password"
+					id="password"
+					placeholder="Zadaj heslo..."
+				/>
 			</div>
 			<div>
 				<label for="gender">Pohlavie: </label>
@@ -22,7 +27,7 @@
 			</div>
 			<div>
 				<label for="education">Vzdelanie: </label>
-				<select name="education" id="education" >
+				<select name="education" id="education">
 					<option value=""></option>
 					<option value="">Základné</option>
 					<option value="">Stredoškolské</option>
@@ -42,9 +47,9 @@
 			</div>
 			<button type="button" onclick="getInputValue();">Odoslať</button>
 			<div>
-                <label for="results">Výsledok:</br></label>
-                <h3 id="name1"></h3>
-                <h3 id="pass"></h3>
+				<label for="results">Výsledok: </label>
+				<h3 id="name1"></h3>
+				<h3 id="pass"></h3>
 			</div>
 		</form>
 	</body>
