@@ -9,3 +9,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		document.getElementById('pass').innerHTML = inputVal;
 	};
 });
+
+document.getElementById('getCars').addEventListener('click', getCars);
+
+function getCars() {
+	fetch("/cars")
+		.then((res) => res.json())
+		.then((data) => {
+			let output = '<h2>Cars: </h2>';
+			data.forEach(function (car) {
+				output += `
+               <ul>
+                  <li>ID: ${car.id}</li>
+                  <li>name: ${car.name}</li>
+                </ul>
+              `;
+			});
+			document.getElementById('output').innerHTML = output;
+		});
+}
