@@ -1,15 +1,16 @@
 body {
-	background-color: black;
+	background-color: white;
 }
 
 form {
 	background-color: white;
 	color: black;
 	padding: 10px;
-	margin: 100px;
+	margin:50px;
 	border-radius: 30px;
 	transition-duration: 0.5s;
-	width: 400px;
+	width: 500px;
+	text-align: center;
 }
 form:hover {
 	background-color: black;
