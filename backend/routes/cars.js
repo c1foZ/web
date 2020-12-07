@@ -27,7 +27,7 @@ router.post('/', (req, res) => {
 		return res.status(400).json({ msg: 'Please include a name and color' });
 	}
 	cars.push(nextCar);
-	res.redirect('/form.html');
+	res.redirect('/form');
 });
 
 module.exports = router;

@@ -12,14 +12,14 @@ app.use('/cars', require('./routes/cars'));
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-app.get('/form.html', (req, res) => {
+app.get('/form', (req, res) => {
 	res.render('home', {
 		title: 'Registered cars',
 		cars,
 	});
 });
 
-app.use(express.static(path.join(__dirname, '..', 'frontend/')));
+app.use(express.static(path.join(__dirname, '..', 'frontend')));
 
 const PORT = process.env.PORT || 3000;
 
